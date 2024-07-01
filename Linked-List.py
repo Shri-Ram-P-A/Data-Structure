@@ -59,16 +59,25 @@ class Ll:
         while cur:
             print(cur.data, end="->")
             cur = cur.next
-        # print(cur.data,end="<-")
-        # cur = t
 
 
 l = Ll()
 for i in range(1, 11):
     l.app(i)
-# l.beg(67)
-# l.mid(56,4)
-# l.dele()
-# l.delbeg()
-# l.delmid(5)
+    
+# TO ADD THE ELEMENT IN THE BEGINNING
+l.beg(67)
+
+# TO ADD THE ELEMENT IN MIDDLE WITH POSITIONS
+l.mid(56,4)
+
+# TO DELETE THE ELEMENT IN LINNKED LIST AT LAST
+l.dele()
+
+# TO DELETE THE ELEMENT IN LINNKED LIST AT BEGINNING
+l.delbeg()
+
+# TO DELETE THE ELEMENT IN LINNKED LIST AT MIDDLE WITH POSITION
+l.delmid(5)
+
 l.disp()
