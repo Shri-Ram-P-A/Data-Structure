@@ -11,6 +11,7 @@ class Tree:
     def ins(self,arr):
         self.root = self.insert(arr,self.root,0,len(arr))
 
+    # insert through numerical
     def insert(self,arr,node,s,e):
         if(s<e):
             node = Node(arr[s])
@@ -18,6 +19,7 @@ class Tree:
             node.right=self.insert(arr,node.right,(s*2)+2,e)
         return node
 
+    # insert through Queue
     def insertqueue(self, arr):
         if not arr:
             return None
