@@ -75,8 +75,17 @@ class Dll:
 dl = Dll()
 for i in range(1,6):
     dl.append(i)
+
+# TO ADD THE ELEMENT AT THE BEGINNING
 dl.beg(3)
+
+# TO ADD THE ELEMENT AT THE GIVEN POSITION
 dl.pos(3,100)
+
+# TO DELETE THE ELEMENT AT BEGINNING
 dl.dbeg()
+
+# TO DELETE THE ELEMENT AT THE GIVEN POSITION
 dl.dpos(3)
+
 dl.disp()
