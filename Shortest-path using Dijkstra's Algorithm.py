@@ -1,5 +1,6 @@
 import heapq
 n = int(input())
+# Give input 2D matrix size of n
 l = [list(map(int,input().split())) for i in range(n)]
 x = int(input())
 c = [False]*n
